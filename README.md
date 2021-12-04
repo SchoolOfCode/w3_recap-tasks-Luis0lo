@@ -10,7 +10,7 @@
 <h1 align="center">
 User Persona</h1>
 <div align="center">
-    <img alt="user Story" src="./images/user-persona.jpg" width="500" />
+    <img alt="user Story" src="./images/user-persona.jpg" width="" />
 </div>
 
 <h1 align="center">
@@ -22,13 +22,13 @@ User Story</h1>
 <h1 align="center">
 Low Fidelity Design</h1>
 <div align="center">
-    <img alt="low fidelity design" src="./images/low-fidelity.jpg" width="300" />
+    <img alt="low fidelity design" src="./images/low-fidelity.jpg" width="500" />
 </div>
 
 <h1 align="center">
 High Fidelity Design</h1>
 <div align="center">
-    <img alt="high fidelity design" src="./images/high-fidelity.jpg" width="500" />
+    <img alt="high fidelity design" src="./images/high-fidelity.jpg" width="" />
 </div>
 
 ## Get ready for next week
