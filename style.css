@@ -15,8 +15,8 @@
 }
 body {
   background-color: var(--background-color);
-  min-height: 1000px;
-  font-size: 18px;
+  min-height: 2000px;
+  font-size: 17px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header {
@@ -28,12 +28,14 @@ header {
 .main-section {
   position: fixed;
   display: flex;
-  max-width: 85vw;
+  /* max-width: 85vw; */
   min-height: 100vh;
   background-color: ;
   margin: -14vh 0px;
-  left: 7vw;
+  left: 6vw;
 }
+
+
 .profile {
   color: var(--background-color);
   display: flex;
@@ -49,8 +51,7 @@ header {
   z-index: 2;
   padding-bottom: 2.5rem;
 }
-.profile-img {
-}
+
 .img-profile {
   min-height: 150px;
   max-width: 150px;
@@ -62,6 +63,9 @@ header {
   max-height: 150px;
   border-radius: 50%;
 }
+h1 {
+    font-weight: lighter;
+}
 .name,
 .role,
 .tools,
@@ -70,7 +74,10 @@ header {
   background-color: var(--light-blue-color);
 }
 .pd {
-  padding: 10px 5px;
+  padding: 9px 5px;
+}
+.pdb {
+    padding-bottom: 10px;
 }
 .bd {
   border-radius: 10px;
@@ -82,6 +89,72 @@ header {
   position: absolute;
   top: 84vh;
   left: 4.5vw;
-  min-width: 30%;
+  min-width: 51%;
 }
 
+/* GRID */
+.main-content {
+  margin-left: 33vw;
+  max-width: 60vw;
+  min-height: 90vh;
+  margin-top: 8vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.7fr;
+  grid-template-rows: 0.8fr 1.2fr 1fr 1.1fr 0.9fr;
+  gap: 3em 2em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'personal-intro personal-intro personal-intro personal-intro personal-intro'
+    'git-info git-info twitter-info twitter-info share-area'
+    'git-info git-info twitter-info twitter-info share-area'
+    'top-projects top-projects top-projects top-projects share-area'
+    'top-projects top-projects top-projects top-projects share-area';
+}
+
+.git-info {
+  grid-area: git-info;
+  background-color: var(--light-green);
+}
+.twitter-info {
+  grid-area: twitter-info;
+}
+.top-projects {
+  grid-area: top-projects;
+  background-color: wheat;
+}
+.personal-intro {
+  grid-area: personal-intro;
+  background-color: var(--light-green);
+  text-align: center;
+  line-height: 1.8rem;
+  color: var(--dark-green);
+}
+.share-area {
+  grid-area: share-area;
+  max-height: 47vh;
+  align-content: center;
+  }
+
+.sticky-share {
+    position: fixed;
+    /* background: var(--light-blue-color); */
+    top: 70vh;
+    right: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 6px #000;
+padding: 0.5rem;}
+
+/* end GRID */
+
+/* icons */
+.share-icon{
+    margin-bottom: 1rem;
+}
+.share-icon, .linkedin-icon, .envelope-icon, .twitter-icon{
+    color: var(--dark-blue-color);
+    padding: 0.1rem 0;
+}
