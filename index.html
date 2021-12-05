@@ -11,12 +11,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,100;1,200;1,500&display=swap"
+      rel="stylesheet"
+    />
     <title>With Luis</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header></header>
-
     <section class="main-section">
       <div class="profile bd">
         <div class="profile-img">
@@ -29,8 +34,8 @@
           <div class="role pd bd mt1"><p>Junior Developer</p></div>
         </div>
         <div class="tools pd bd">
-          <p class="pdb">Tools</p>
-          <div>
+          <h3 class="pdb">Tools</h3>
+          <div class="pdb">
             <!-- <i class="fab fa-html5 fa-3x"></i> -->
             <i class="fab fa-css3-alt fa-3x"></i>
             <i class="fab fa-bootstrap fa-3x"></i>
@@ -42,12 +47,12 @@
           </div>
         </div>
         <div class="education pd bd">
-            <p class='pdb'>Background</p>
+          <h3 class="pdb">Background</h3>
           <p>School of Code</p>
           <p>BA Sport Psychology</p>
         </div>
-        <div class="contact pd bd">
-          <p>Contact <i class="fas fa-envelope"></i></p>
+        <div class="link contact pd bd">
+          <h4>Contact <i class="fas fa-envelope"></i></h4>
         </div>
       </div>
     </section>
@@ -58,7 +63,7 @@
           <a
             class="twitter-timeline"
             data-width=""
-            data-height="350"
+            data-height="330"
             data-theme="light"
             href="https://twitter.com/withluis1?ref_src=twsrc%5Etfw"
           ></a>
@@ -68,18 +73,50 @@
             charset="utf-8"
           ></script>
         </div>
-        <div class="top-projects">top</div>
+        <div class="top-projects bd pd">
+          <div class="main-project-header bd pd">
+            <p class="project-title">
+              Portfolio <small>(prior to School of Code)</small>
+            </p>
+            <div class="project-icons">
+              <a href="https://github.com/Luis0lo" target="_blank">
+                <i class="link fab fa-github-square fa-2x"></i
+              ></a>
+              <a href="https://withluis.com/" target="_blank"
+                ><i class="link fas fa-laptop fa-2x"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-description">
+              <p>This is the result of my self learning journey</p>
+              <p>
+                In this portfolio, you can find several projects using a wide
+                variety of tools.
+              </p>
+              <p>
+                I started with HTML and end up at the point where I had to build
+                a basic DB and deploy a 100% functional app.
+              </p>
+            </div>
+            <img
+              class="portfolio-img bd"
+              src="images/portfolio-img.jpg"
+              alt=""
+            />
+          </div>
+        </div>
         <div class="personal-intro bd pd">
           <p>I am an enthusiastic, self-driven & reliable person.</p>
           <p>Right now improving my developer skills at the School of Code.</p>
-          <p>Working towards a mid-level software developer position</p>
+          <p>Working towards a mid-level software developer position.</p>
         </div>
         <div class="share-area">
           <div class="sticky-share bd">
             <i class="fas fa-share-alt fa-3x share-icon"></i>
-            <i class="fab fa-linkedin fa-2x linkedin-icon"></i>
-            <i class="fab fa-twitter-square fa-2x twitter-icon"></i>
-            <i class="fas fa-envelope fa-2x envelope-icon"></i>
+            <i class="link fab fa-linkedin fa-2x linkedin-icon"></i>
+            <i class="link fab fa-twitter-square fa-2x twitter-icon"></i>
+            <i class="link fas fa-envelope fa-2x envelope-icon"></i>
           </div>
         </div>
       </div>
