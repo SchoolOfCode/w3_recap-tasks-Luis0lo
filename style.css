@@ -1,3 +1,6 @@
+/* Left responsive layout */
+/* img responsivenes */
+/* towards the final commit change name variables for primary and secondary colors */
 :root {
   --light-blue-color: #139bc1;
   --dark-blue-color: #141b41;
@@ -55,7 +58,7 @@ header {
   min-height: 150px;
   max-width: 150px;
   border-radius: 50%;
-  background-color: var(--light-green);
+  background-color: var(--green-color);
   margin: auto;
 }
 .img-profile img {
@@ -94,7 +97,7 @@ h1 {
 /* GRID */
 .main-content {
   margin-left: 33vw;
-  max-width: 60vw;
+  max-width: 62vw;
   min-height: 90vh;
   margin-top: 8vh;
 
@@ -113,7 +116,7 @@ h1 {
 
 .git-info {
   grid-area: git-info;
-  background-color: var(--light-green);
+  background-color: var(--green-color);
 }
 .twitter-info {
   grid-area: twitter-info;
@@ -125,7 +128,7 @@ h1 {
   font-family: var(--text-content);
   font-weight: 500;
   grid-area: personal-intro;
-  background-color: var(--light-green);
+  background-color: var(--green-color);
   text-align: center;
   line-height: 1.8rem;
   color: var(--dark-green);
@@ -144,7 +147,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 3px 4px 6px 0 var(--dark-blue-color);
+  /* box-shadow: 3px 4px 6px 0 var(--dark-blue-color); */
   padding: 0.5rem;
 }
 
@@ -154,7 +157,7 @@ h1 {
   max-height: 50vh;
 }
 .main-project-header {
-  background-color: var(--light-green);
+  background-color: var(--green-color);
   padding: 1rem 1rem;
 }
 
@@ -172,7 +175,7 @@ h1 {
   font-size: 1.7rem;
 }
 small {
-  font-size: 16px;
+  font-size: 15px;
 }
 .project-description {
   display: flex;
@@ -203,7 +206,7 @@ small {
 }
 
 a {
-    /* text-decoration: none; */
+  /* text-decoration: none; */
   color: black;
 }
 
@@ -229,4 +232,3 @@ a {
   color: #1000ec;
 }
 
-/* RESPONSIVE LAYOUT */
