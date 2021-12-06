@@ -16,11 +16,10 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
 }
 body {
   background-color: var(--background-color);
-  min-height: 2000px;
+  /* min-height: 2000px; */
   font-size: 17px;
   font-family: var(--text-profile);
 }
@@ -81,6 +80,9 @@ h1 {
 .pdb {
   padding-bottom: 10px;
 }
+.pdx {
+  padding: 0 5px;
+}
 .bd {
   border-radius: 10px;
 }
@@ -97,12 +99,12 @@ h1 {
 /* GRID */
 .main-content {
   margin-left: 33vw;
-  max-width: 62vw;
+  max-width: 60vw;
   min-height: 90vh;
   margin-top: 8vh;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 0.7fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
   grid-template-rows: 110px 120px 1fr 1.1fr 0.9fr;
   gap: 3em 2em;
   grid-auto-flow: row;
@@ -132,6 +134,14 @@ h1 {
   text-align: center;
   line-height: 1.8rem;
   color: var(--dark-green);
+}
+.git-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.5rem;
 }
 .share-area {
   grid-area: share-area;
@@ -231,4 +241,3 @@ a {
 .fa-css3-alt:hover {
   color: #1000ec;
 }
-
