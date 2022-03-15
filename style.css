@@ -1,0 +1,247 @@
+/* Left responsive layout */
+/* img responsivenes */
+/* towards the final commit change name variables for primary and secondary colors */
+:root {
+  --light-blue-color: #139bc1;
+  --dark-blue-color: #141b41;
+  --green-color: #a0e8af;
+  --light-green: #ccf3ae;
+  --dark-green: #04471c;
+  --background-color: #f8f9fa;
+  --border-radius: 10px;
+  --text-content: 'Montserrat', sans-serif;
+  --text-profile: 'Times New Roman', Times, serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--background-color);
+  /* min-height: 2000px; */
+  font-size: 17px;
+  font-family: var(--text-profile);
+}
+header {
+  min-height: 22vh;
+  min-width: 100%;
+  background-color: var(--light-blue-color);
+  /* z-index: -1; */
+}
+.main-section {
+  position: fixed;
+  display: flex;
+  min-height: 100vh;
+  background-color: ;
+  margin: -14vh 0px;
+  left: 6vw;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  min-width: 18vw;
+  max-height: 80vh;
+  padding: 1.2rem;
+  color: var(--background-color);
+  font-size: bold;
+  background-color: var(--dark-blue-color);
+  z-index: 2;
+  padding-bottom: 2.5rem;
+}
+
+.img-profile {
+  min-height: 150px;
+  max-width: 150px;
+  border-radius: 50%;
+  background-color: var(--green-color);
+  margin: auto;
+}
+.img-profile img {
+  max-height: 150px;
+  border-radius: 50%;
+}
+h1 {
+  font-weight: lighter;
+}
+h2 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+.name,
+.role,
+.tools,
+.education,
+.contact {
+  background-color: var(--light-blue-color);
+}
+.pd {
+  padding: 10px 5px;
+}
+.pdb {
+  padding-bottom: 10px;
+}
+.pdx {
+  padding: 0 5px;
+}
+.bd {
+  border-radius: 10px;
+}
+.mt1 {
+  margin-top: 0.5rem;
+}
+.contact {
+  position: absolute;
+  top: 85vh;
+  left: 4.5vw;
+  min-width: 51%;
+}
+
+/* GRID */
+.main-content {
+  margin-left: 33vw;
+  max-width: 60vw;
+  min-height: 90vh;
+  margin-top: 8vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 110px 120px 1fr 1.1fr 0.9fr;
+  gap: 3em 2em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'personal-intro personal-intro personal-intro personal-intro personal-intro'
+    'git-info git-info twitter-info twitter-info share-area'
+    'git-info git-info twitter-info twitter-info share-area'
+    'top-projects top-projects top-projects top-projects share-area'
+    'top-projects top-projects top-projects top-projects share-area';
+}
+
+.git-info {
+  grid-area: git-info;
+  background-color: var(--green-color);
+}
+.twitter-info {
+  grid-area: twitter-info;
+}
+.top-projects {
+  grid-area: top-projects;
+}
+.personal-intro {
+  font-family: var(--text-content);
+  font-weight: 500;
+  grid-area: personal-intro;
+  background-color: var(--green-color);
+  text-align: center;
+  line-height: 1.8rem;
+  color: var(--dark-green);
+}
+.git-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+.share-area {
+  grid-area: share-area;
+  max-height: 47vh;
+  align-content: center;
+}
+
+.sticky-share {
+  position: fixed;
+  top: 70vh;
+  right: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 3px 4px 6px 0 var(--dark-blue-color); */
+  padding: 0.5rem;
+}
+
+/* end GRID */
+
+.top-projects {
+  max-height: 50vh;
+}
+.main-project-header {
+  background-color: var(--green-color);
+  padding: 1rem 1rem;
+}
+
+.main-project-header,
+.project-info {
+  display: flex;
+  justify-content: space-between;
+}
+.project-info {
+  line-height: 1.5rem;
+  padding: 15px 0;
+}
+.project-title {
+  font-family: var(--text-content);
+  font-size: 1.7rem;
+}
+small {
+  font-size: 15px;
+}
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project-description p {
+  font-family: var(--text-content);
+  padding: 5px;
+}
+.portfolio-img {
+  max-width: 350px;
+}
+.fa-laptop {
+  padding-left: 1rem;
+}
+
+/* icons */
+.share-icon {
+  margin-bottom: 1rem;
+}
+.share-icon,
+.linkedin-icon,
+.envelope-icon,
+.twitter-icon {
+  color: var(--dark-blue-color);
+  padding: 0.1rem 0;
+}
+
+a {
+  /* text-decoration: none; */
+  color: black;
+}
+
+/* animations on hover */
+.link:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out 0s;
+  cursor: pointer;
+}
+.fa-react:hover {
+  color: var(--dark-blue-color);
+}
+.fa-node-js:hover {
+  color: #8be918;
+}
+.fa-js-square:hover {
+  color: #ffe100;
+}
+.fa-bootstrap:hover {
+  color: #870ff8;
+}
+.fa-css3-alt:hover {
+  color: #1000ec;
+}
